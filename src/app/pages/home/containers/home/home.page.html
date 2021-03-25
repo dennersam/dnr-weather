@@ -4,7 +4,7 @@
             <label>Pesquisar</label>
             <div>
                 <input class="form-control" [formControl]="searchControl">
-                <button class="btn btn-dark" 
+                <button class="btn btn-primary" 
                         [disabled]="!searchControl.valid"
                         (click)="doSearch()">Pesquisar</button>
             </div>
@@ -16,8 +16,9 @@
 
         <jv-loader *ngIf="loading$ | async"></jv-loader>
 
-        <div *ngIf="!(loading$ | async) && !(error$ | async) && !!(cityWeather)">
-            <jv-current-weather [cityWeather]="cityWeather" 
+        <div *ngIf="!(loading$ | async) && !(error$ | async) && !!cityWeather">
+            <jv-current-weather [cityWeather]="cityWeather"
+                                [isFavorite]="isCurrentFavorite$ | async"
                                 (toggleBookmark)="onToggleBookmark()"></jv-current-weather>
         </div>
 

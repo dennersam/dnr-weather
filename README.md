@@ -1,5 +1,23 @@
 # DnrWeather
 
+Esse é um projeto que fiz no curso da Digital Innovation One. É uma aplicação de previsão do tempo utilizando consulta Rest API.
+
+Abaixo uma imagem de consulta de uma cidade, trazendo detalhes do tempo atual.
+
+![](/src/assets/img/img01.jpg)
+
+Após clicar em "Ver Detalhes", conseguimos ver a previsão do tempo em uma semana.
+
+![](/src/assets/img/img02.jpg)
+
+Também é possível na aplicação adicionar a cidade aos favoritos, clicando na opção "Adicionar aos Favoritos".
+
+![](/src/assets/img/img02.jpg)
+
+Espero que curtam, até a próxima!
+
+## Fim da orientação.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
 ## Development server
